@@ -1,0 +1,31 @@
+name: Sync with upstream branch [Weekly]
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/dr5hn/countries-states-cities-database.git
+          git fetch upstream
+
+      - name: Sync with upstream
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git merge upstream/master --no-edit
+        
+      - name: Push to origin
+        run: |
+          git push origin master
