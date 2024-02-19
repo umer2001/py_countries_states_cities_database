@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
-import glob
 
 long_description = open("README.md", "r", encoding="utf-8").read()
 
 setup(
     name="py_countries_states_cities_database",
-    version="2.2.1",
+    version="2.2.7",
     description="A Python package to get countries, states and cities information",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    data_files=[
-        ("py_countries_states_cities_database", glob.glob("./*.json")),
-    ],
     packages=find_packages(),
+    package_dir={
+        "py_countries_states_cities_database": "./py_countries_states_cities_database"
+    },
+    package_data={"py_countries_states_cities_database": ["*.json", "*.py"]},
     url="https://github.com/umer2001/py_countries_states_cities_database",
     author="Umer Farooq",
     author_email="umer2001.uf@gmail.com",

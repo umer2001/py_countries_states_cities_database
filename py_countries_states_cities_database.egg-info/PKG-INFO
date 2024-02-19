@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: py-countries-states-cities-database
-Version: 0.7
+Version: 2.2.7
 Summary: A Python package to get countries, states and cities information
 Home-page: https://github.com/umer2001/py_countries_states_cities_database
 Author: Umer Farooq
@@ -28,7 +28,7 @@ License-File: LICENSE
 ### 📦 Installation
 
 ```bash
-pip install -i https://test.pypi.org/simple/ py-countries-states-cities-database
+pip install py-countries-states-cities-database
 ```
 
 ### 📚 Usage

@@ -5,3 +5,4 @@ issues/
 csc/
 base.php
 dist/
+py_countries_states_cities_database/*.json

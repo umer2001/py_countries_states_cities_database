@@ -38,5 +38,6 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
+          cp *.json py_countries_states_cities_database/
           python setup.py sdist
           python -m twine upload --repository pypi --skip-existing dist/*
