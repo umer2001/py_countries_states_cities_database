@@ -5,7 +5,7 @@ long_description = open("README.md", "r", encoding="utf-8").read()
 
 setup(
     name="py_countries_states_cities_database",
-    version="2.2.0",
+    version="2.2.1",
     description="A Python package to get countries, states and cities information",
     long_description=long_description,
     long_description_content_type="text/markdown",
