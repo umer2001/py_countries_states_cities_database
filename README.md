@@ -33,6 +33,18 @@ pip install py-countries-states-cities-database
     print(get_all_countries_and_states_nested())
     print(get_all_countries_and_cities_nested())
 
+
+    # File name options
+    | "cities.json"
+    | "states.json"
+    | "countries.json"
+    | "subregions.json"
+    | "regions.json"
+    | "countries+cities.json"
+    | "countries+states.json"
+    | "states+cities.json"
+    | "countries+states+cities.json",
+
     # Get the file path
     print(get_file_path("cities.json"))
 ```
