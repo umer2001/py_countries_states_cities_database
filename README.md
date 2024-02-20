@@ -20,6 +20,7 @@ pip install py-countries-states-cities-database
         get_all_states_and_cities_nested,
         get_all_countries_and_states_nested,
         get_all_countries_and_cities_nested,
+        get_file_path
     )
 
     # All functions return a list of dictionaries
@@ -31,4 +32,7 @@ pip install py-countries-states-cities-database
     print(get_all_states_and_cities_nested())
     print(get_all_countries_and_states_nested())
     print(get_all_countries_and_cities_nested())
+
+    # Get the file path
+    print(get_file_path("cities.json"))
 ```

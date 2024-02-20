@@ -78,3 +78,17 @@ def get_all_countries_states_and_cities_nested():
         encoding="utf-8",
     ) as f:
         return json.load(f)
+
+
+def get_file_path(
+    file_name="cities.json"
+    | "states.json"
+    | "countries.json"
+    | "subregions.json"
+    | "regions.json"
+    | "countries+cities.json"
+    | "countries+states.json"
+    | "states+cities.json"
+    | "countries+states+cities.json",
+):
+    return resource_filename(__name__, file_name)
